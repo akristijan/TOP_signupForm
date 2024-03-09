@@ -8,46 +8,86 @@
     <link rel="stylesheet" href="./styles.css">
     <title>Document</title>
 </head>
-<body class="container">
-    <section class="logo-section">
-        <div class="odin">
-            <img src="./img/odin-lined.png" alt="The Odin project logo"><span class="odin-text">ODIN</span>
-        </div>
-       
-    </section>
-    <section class="main-section">
-        <header>
-            <p>
-                This is not a real online service! You know you need something like This
-                in your life to help you realize your deepest dreams.
-                Sign up now to get started.
-            </p>
-            <p>You know you want to.</p>
-        </header>
-        <form action="#" method="post" class="main-form" >
-            <div class="main-form-inputs">
-                <div class="left-inputs">
-                    <label for="firstname">First Name</label>
-                    <input type="text" id="firstname" name="firstName" required>
-                    <label for="mail">Email</label>
-                    <input type="email" id="mail" name="mail" required>
-                    <label for="password">Password</label>
-                    <input type="password" id="password" name="password" required>
-                </div>
-                <div class="right-inputs">
-                    <label for="lastname">Last Name</label>
-                    <input type="text" id="lastname" name="lastName" required>
-                    <label for="phone">Phone Number</label>
-                    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}">
-                    <label for="confirmPwd">Confirm password</label>
-                    <input type="password" id="confirmPwd" name="confirmPwd" required>
-                </div>
+<body >
+    <div class="container">
+
+        <div class="image-section">
+            <div class="odin-logo">
+                <img src="./img/odin-lined.png" alt="odin project logo">
+                <p>Odin</p>
             </div>
-            <button type="submit" >Create Account</button>
-        </form>
-        <div class="login">   
-            <p><strong>Already have an account?</strong><a href="#" class="link-login"> Log in</a></p>
-        </div>      
-    </section>
+
+            <p class="shoutout"> 
+                Photo by <a href="https://unsplash.com/@attic_in_my_mind">Zuzana Kacerová</a> 
+            </p>
+        </div>
+
+        <div class="right-side">
+
+
+            <header class="header">
+
+                <h1> I know you want some dried herbs in your
+                    life to help you realize your deepest dreams. <span>Sign up now to get brain chillout!</span>
+                </h1>
+                <p></p>
+
+                <h2>You <i>know</i> you want to.</h2>
+
+            </header>
+
+            <form id="form" action="" method="get">
+                <h1>Let's do this!</h1>
+                <ul>
+
+                    <li>
+                        <label for="firstName">FIRST NAME</label>
+                        <input type="text" id="firstName" name="firstName" required> 
+                    </li>
+
+                    <li>
+                        <label for="lastName">LAST NAME</label>
+                        <input type="text" id="lastName" required> 
+                    </li>
+
+                    <li>
+                        <label for="email">EMAIL</label>
+                        <input type="email" name="email" id="email" required>
+                    </li>
+
+                    <li>
+                        <label for="phone">PHONE NUMBER</label>
+                        <input type="tel" id="phone" name="phoneNumber">
+                    </li>
+
+                    <li>
+                        <label for="passwordOne">Password</label>
+                        <input class='password' type="password" id="password" name="password" required>
+                        <span></span>
+                    </li>
+                    
+                    <li>
+                        <label for ='confirmPassword'>COMFIRM PASSWORD</label>
+                        <input class='password' type="password" id="confirmPassword" name="confirmPassword" required>
+                        <span></span>
+                    </li>
+
+
+                </ul>
+
+            </form>
+
+            <div class="button-section">
+
+                <button type="submit" class='submitButton' form="form"> Create Account </button>
+                <p>Already have an account? <a href="#">Log in</a></p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+    <script src="./script.js"></script>
 </body>
 </html>

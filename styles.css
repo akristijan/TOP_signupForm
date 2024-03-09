@@ -1,3 +1,4 @@
+/* CSS */
 :root {
     font-family: Inter, sans-serif;
     font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
@@ -6,147 +7,237 @@
     :root { font-family: InterVariable, sans-serif; }
   }
 
-  @font-face {
-    font-family: my-odinFont;
-    src: url('Norse-Bold.otf');
-  }
-
-*, *::after, *::before {
+*, ::after,::before{
+    margin: 0;
     box-sizing: border-box;
 }
 
-body {
-    margin: 0;
-    font-family: Inter,-apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
-    display: flex;
-    height: 100dvh;
-    font-size: 16px;
-}
+body{
+    
+    height: 100vh;
+    padding: 0;
+    font-family: Inter,sans-serif;
 
-header {
-    font-size: 1.25rem;
-    font-family: Inter;
-    background-color: #F9FAFB;
-    font-weight: bold;
-    padding-top: 6rem;
-    padding-bottom: 2rem;
-    padding-right: 3.5rem;
-}
-
-button {
-    width: 250px;
-    font-size: 1rem;
-    padding: 15px 25px;
-    background-color: #596D48;
-    color: #fff;
-    font-weight: bold;
-    border: none;
-    border-radius: 5px;
-}
-
-img {
-    display: block;
-    max-width: 100%;
 }
 
 label {
     text-transform: capitalize;
 }
 
-.container {
-    width: 80%;
-    max-width: 1155px;
+.container{
+    display: flex;
     margin: 0 auto;
+    width: 90%;
+    max-width: 1300px;
 }
 
-.logo-section {
-    width: 33%;
-    background-image: url('./img/herbs.jpg');
+.image-section{
+    background-image: url("./img/herbs.jpg");
     background-repeat: no-repeat;
+    width: 600px;
+    min-width:215px;
+    height: 100vh;
     background-size: cover;
-   
+
 }
 
-.main-section {
-    max-width: 66%;
-    padding-left: 2.5rem;
-    
-}
-
-.odin {
-    
-    margin-top: 7rem;
+.odin-logo{
+    background-color: rgba(0,0,0,.5);
+    width: 100%;
+    height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 150px;
-    background-color: rgba(0,0,0,.5);
+    margin-top: 200px;
+    position: relative;
 }
 
-.odin-text {
-    font-family: my-odinFont;
-    color: #F9FAFB;
-    font-weight: 800;
-    font-size: 4.5rem;
+.odin-logo img{
+    height: 90px;
+    width: auto;
 }
 
-.odin img {
-    max-height: 70%;
-    
-    object-fit: contain;
+.odin-logo p{
+    font-family:"Yanone Kaffeesatz" ;
+    color: whitesmoke;
+    font-size: 70px;
+    padding: 12px;
+    margin: 0;
 }
 
-/* Form Sytling */
-.main-form {
-    background-color: #F9FAFB;
-    padding: 1rem 0;
+.yanone-kaffeesatz {
+    font-family: "Yanone Kaffeesatz", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.shoutout{
+    position: absolute;
+    bottom: 1px;
+    padding: 5px 8px;
+    color: wheat;
+    background-color: black;
+    opacity: .5;
+}
+.shoutout a{
+    color: whitesmoke;
+}
+
+
+/* Right side */
+
+.right-side{
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    gap: 2rem;
-    
-}
-
-.main-form-inputs {
-    padding: 1rem 0;
-    background-color: #fff;
-    display: flex;
-    justify-content: flex-start;
-    gap: 3.125rem;
-    box-shadow: 0px 18px 20px -20px rgba(0, 0, 0, 0.247);
-}
-
-input {
+    align-items: flex-start;
+    background-color: white;
     width: 100%;
-    border: 1px solid #E5E7EB;
 }
 
-.left-inputs,
-.right-inputs 
-{
+.header{
+
+    width: 80%;
+    margin-left: 40px;
+    margin-top: calc(2px + 7vw);
+    margin-bottom: calc(10px + 3vw);
+}
+
+.disclaimer-section p{
+    margin: 0;
+}
+
+span{
+    display: block;
+}
+
+
+form {
+    flex: 1;
+    width: 100%;
+    padding-left: 40px;
+    padding-top: 20px;
+    padding-right: 20px;
+    box-shadow: 1px 5px 10px 0px rgb(192, 191, 191)
+}
+h1{
+    margin: 0;
+    font-size:25px;
+    margin-bottom: 20px;
+
+}
+
+form li{
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+input, label{
+    appearance: none;
+    width: 100%;
+    outline: none;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font-family: inherit;
+    font-size: 100%;
+}
+
+input{
+    border: 1px solid #d3d1d1;
+    height: 30px;
+    border-radius: 6px;
+    padding: 10px 6px;
+}
+
+label{
+    font-size: 12px;
+    font-weight: 550;
+    color: rgb(73, 72, 72);
+    margin-bottom: 5px;
+}
+
+input:focus{
+    border: 1px solid blue;
+    box-shadow: 3px 3px 10px 0px rgb(189, 189, 189)
+}
+
+
+/* button section */
+
+.button-section{
+    width: 100%;
+    flex: 1;
     display: flex;
     flex-direction: column;
-    gap: .4rem;
+    padding-top: 20px;
 }
 
-.login {
-    padding: .5rem 0;
-    background-color: #F9FAFB;
-    padding-top: 1rem;
+button{
+    width: 70%;
+    border: none;
+    background-color: rgb(181, 97, 33);
+    border-radius: 6px;
+    padding: 10px 10px;
+    margin-left: 40px;
+    font-size: 20px;
+    color: whitesmoke;
+    margin-bottom: 1px;
+    cursor: pointer;
 }
 
-.link-login {
+.button-section p{
+    margin-left: 40px;
+}
+
+.button-section a{
     text-decoration: none;
-    color: #596D48;
-    font-weight: 800;
+    color: rgb(181, 97, 33);
+}
+
+@media only screen and (min-width: 900px) {
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 800px;
+    }
+
+    .right-side li{
+        display: flex;
+        flex-direction: column;
+        margin-right: 40px;
+    }
+    input, label{
+        width: 300px;
+    }
+
+    .disclaimer-section{
+        max-width: 600px;
+    }
+
+    button{
+        width: 200px;
+        margin-bottom: 15px;
+    }
+}
+
+
+.error{
+    border: 1px solid red;
+}
+
+.error  + span::after{
+    content: '* Passwords do not match';
+    color: red;
+    font-size: 12px;
 }
 
 input[type="password"]:invalid {
     border: 1px solid red;
-}
-
-input:focus {
-    border-color: cadetblue;
-    border: 1px solid rgb(124, 166, 243);
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
