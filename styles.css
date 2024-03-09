@@ -1,0 +1,152 @@
+:root {
+    font-family: Inter, sans-serif;
+    font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
+  }
+  @supports (font-variation-settings: normal) {
+    :root { font-family: InterVariable, sans-serif; }
+  }
+
+  @font-face {
+    font-family: my-odinFont;
+    src: url('Norse-Bold.otf');
+  }
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Inter,-apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+    display: flex;
+    height: 100dvh;
+    font-size: 16px;
+}
+
+header {
+    font-size: 1.25rem;
+    font-family: Inter;
+    background-color: #F9FAFB;
+    font-weight: bold;
+    padding-top: 6rem;
+    padding-bottom: 2rem;
+    padding-right: 3.5rem;
+}
+
+button {
+    width: 250px;
+    font-size: 1rem;
+    padding: 15px 25px;
+    background-color: #596D48;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+label {
+    text-transform: capitalize;
+}
+
+.container {
+    width: 80%;
+    max-width: 1155px;
+    margin: 0 auto;
+}
+
+.logo-section {
+    width: 33%;
+    background-image: url('./img/herbs.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+
+.main-section {
+    max-width: 66%;
+    padding-left: 2.5rem;
+    
+}
+
+.odin {
+    
+    margin-top: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    background-color: rgba(0,0,0,.5);
+}
+
+.odin-text {
+    font-family: my-odinFont;
+    color: #F9FAFB;
+    font-weight: 800;
+    font-size: 4.5rem;
+}
+
+.odin img {
+    max-height: 70%;
+    
+    object-fit: contain;
+}
+
+/* Form Sytling */
+.main-form {
+    background-color: #F9FAFB;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 2rem;
+    
+}
+
+.main-form-inputs {
+    padding: 1rem 0;
+    background-color: #fff;
+    display: flex;
+    justify-content: flex-start;
+    gap: 3.125rem;
+    box-shadow: 0px 18px 20px -20px rgba(0, 0, 0, 0.247);
+}
+
+input {
+    width: 100%;
+    border: 1px solid #E5E7EB;
+}
+
+.left-inputs,
+.right-inputs 
+{
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+}
+
+.login {
+    padding: .5rem 0;
+    background-color: #F9FAFB;
+    padding-top: 1rem;
+}
+
+.link-login {
+    text-decoration: none;
+    color: #596D48;
+    font-weight: 800;
+}
+
+input[type="password"]:invalid {
+    border: 1px solid red;
+}
+
+input:focus {
+    border-color: cadetblue;
+    border: 1px solid rgb(124, 166, 243);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
